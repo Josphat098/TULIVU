@@ -1,0 +1,9 @@
+body, h1, h2, h3, p, ul, li, a, img, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: amara;
+}
