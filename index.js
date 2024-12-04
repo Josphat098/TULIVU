@@ -1,8 +1,14 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
-    anchor. addEventListener('click', function (e){
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click',function (e){
         e.preventDefault();
-        document.querySelector(this.getattribute('href')). scrollintoview({
-            behaviour: 'smooth'
-        });
+
+        const targetId = this.getAttribute('href');
+
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            targetElement.scrollIntoView({
+                behaviour: 'smooth'
+            });
+        }
     });
 });

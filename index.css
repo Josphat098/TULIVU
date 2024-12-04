@@ -7,14 +7,18 @@ body, h1, h2, h3, p, ul, li, a, img, form, input, textarea, button {
 body {
     font-family: 'Times New Roman';
     line-height: 1.8;
-    color: #e1e1e2;
-
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e2;
 }
 
 header {
-    background-color: #62371f;
+    background: rgba(0, 0, 0, 0.2);
     text-align: center;
-    color: #e1e1e2;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 35;
     padding: 5em 0;
 
 }
@@ -22,22 +26,27 @@ header {
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 1.5em;
     margin-top: 1em;
 
 }
 
 header nav ul li a {
-    color: #e1e1e2;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
 
+header nav ul li a:hover {
+    color: #62371f;
 }
 
 section {
     padding: 1em;
     text-align: center;
+    font-size: 20;
 
 }
 
@@ -53,11 +62,12 @@ section {
     gap: 1.5em;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 20;
 
 }
 
 .product {
-    border: 1px solid #e1e1e2;
+    border: 1px solid;
     padding: 1em;
     text-align: left;
     max-width: 300px;
@@ -70,9 +80,18 @@ section {
 
 }
 
+#contact {
+    padding: 2em;
+    background-color: #e1e1e2;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
 footer {
-    background: #e1e1e2;
-    color: #e1e1e2;
+    background: rgba(0, 0, 0, 0.2);
+    color: #000000;
     text-align: center;
     padding: 1em;
 }
