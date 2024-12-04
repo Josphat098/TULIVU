@@ -5,5 +5,74 @@ body, h1, h2, h3, p, ul, li, a, img, form, input, textarea, button {
 }
 
 body {
-    font-family: amara;
+    font-family: 'Times New Roman';
+    line-height: 1.8;
+    color: #e1e1e2;
+
+}
+
+header {
+    background-color: #62371f;
+    text-align: center;
+    color: #e1e1e2;
+    padding: 5em 0;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+
+}
+
+header nav ul li a {
+    color: #e1e1e2;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+section {
+    padding: 1em;
+    text-align: center;
+
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.product-grid {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    border: 1px solid #e1e1e2;
+    padding: 1em;
+    text-align: left;
+    max-width: 300px;
+
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+
+}
+
+footer {
+    background: #e1e1e2;
+    color: #e1e1e2;
+    text-align: center;
+    padding: 1em;
 }
