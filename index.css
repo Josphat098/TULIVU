@@ -183,11 +183,11 @@ section {
 
 form label {
     display: block;
-    margin: 9px 0 4px;
+    margin: 10px 0 5px;
 }
 
 form input, form textarea, form button {
-    width: 85%;
+    width: 100%;
     padding: 6px;
     margin-bottom: 10px;
     border: 1px solid #62371f;
