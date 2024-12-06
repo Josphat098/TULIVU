@@ -147,7 +147,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 20px;
+    padding: 30px 10px;
     background-color: #e1e1e2;
     color: #000000;
     gap: 20px;
@@ -182,15 +182,15 @@ section {
 
 form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 9px 0 4px;
 }
 
 form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 85%;
+    padding: 6px;
+    margin-bottom: 10px;
     border: 1px solid #62371f;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 form button {
