@@ -145,6 +145,7 @@ section {
 }
 #feedback {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px 10px;
@@ -156,14 +157,14 @@ section {
 .testimonials, .contact-form {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #e1e1e2;
     border: 1px solid #62371f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .testimonials h2 {
@@ -212,3 +213,11 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+@media (min-width: 768px) {
+    #feedback {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
