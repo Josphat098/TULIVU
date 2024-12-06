@@ -8,6 +8,9 @@ The website is hosted on github pages. If you wish to make changes to the websit
 
 ## Project setup
 The project consists of a html file, css file and a javascript file that are connected to each other via the <link></link> tag for css and the <script></script> tag for javascript.
+
+The project is a website that provides a platform for selling scented candles. Customers can access the website from the provided link and once they have accessed the website, they can access the available products for sale. Once they find a product they are interested in they will click the "Buy now" button that will issue an alert box informing them that they will be redirected to the whatsapp page of the seller. This is because the website's is for a small business. The website owner wanted to start small then slowly upgrade as the business goes on.
+Once the alert box pops up, it comes with an "ok" button which when clicked will direct the customer to the whatsapp platform under the seller's chat section where they will finalise the details of their purchase while also making payments. 
 The css file contains all styles that make the website seem visually appealing whereas the javascript file contains code that makes the website responsive.
 
 ## Technologies Used
