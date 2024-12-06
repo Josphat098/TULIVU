@@ -13,15 +13,16 @@ header {
     padding: 20px 0;
 }
 
-header h1 {
-    font-family: 'Allura', cursive;
-    font-size: 3rem;
+.header-title{
+    font-family: 'Amaranth', cursive;
+    font-size: 3rem !important;
     margin: 0;
 }
 
 header p {
+    font-family: 'Amaranth', sans-serif;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     margin: 10px 0;
 }
 
@@ -30,6 +31,7 @@ header .btn {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #62371f;
+    font-size: 2rem;
     color: #e1e1e2;
     text-decoration: none;
     border-radius: 5px;
@@ -45,6 +47,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
     background-color: #62371f;
 }
 
@@ -62,10 +65,10 @@ nav ul li a:hover {
     color: #e9b732;
 }
 
-/* Section Styles */
 section {
     padding: 40px 20px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 #about {
@@ -80,9 +83,25 @@ section {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #feedback {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 }
 
 .product {
@@ -192,14 +211,4 @@ footer {
     color: #e1e1e2;
     text-align: center;
     padding: 20px;
-}
-
-footer .social-media a {
-    margin: 0 10px;
-    color: #e9b732;
-    text-decoration: none;
-}
-
-footer .social-media a:hover {
-    color: #62371f;
 }
