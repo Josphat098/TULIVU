@@ -2,20 +2,21 @@ body {
     font-family: 'Amaranth', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e1e1e2;
+    background: linear-gradient(180deg, #e1e1e2, #63271f);
     color: #000000;
 }
 
 header {
-    background-color: #e9b732;
+    background: url(images/tuliza.JPG) no-repeat;
     color: #000000;
     text-align: center;
     padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header-title{
     font-family: 'Amaranth', cursive;
-    font-size: 3rem !important;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -31,14 +32,17 @@ header .btn {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #62371f;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #e1e1e2;
     text-decoration: none;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 header .btn:hover {
     background-color: #000000;
+    transform: scale(1.1);
 }
 
 nav ul {
@@ -47,7 +51,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
     background-color: #62371f;
 }
 
@@ -59,6 +62,7 @@ nav ul li a {
     text-decoration: none;
     color: #e1e1e2;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 nav ul li a:hover {
@@ -74,6 +78,9 @@ section {
 #about {
     background-color: #e9b732;
     color: #000000;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #products {
@@ -89,28 +96,24 @@ section {
 }
 
 @media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-    }
-
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    #feedback {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
     }
 }
 
 .product {
+    position: relative;
     background-color: #e1e1e2;
     color: #000000;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.product.hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
@@ -137,12 +140,26 @@ section {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .buy-now:hover {
     background-color: #62371f;
     color: #e1e1e2;
 }
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e9b732;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 #feedback {
     display: flex;
     flex-direction: column;
@@ -167,30 +184,19 @@ section {
     padding: 20px 10px;
 }
 
-.testimonials {
-    margin-right: 0px;
+.contact-form h2,
+.testimonials h2{
+    color: #63271f;
 }
 
-.testimonials h2 {
-    color: #62371f;
-}
-
-.testimonials blockquote {
-    font-style: italic;
-    margin: 20px 0;
-    color: #000000;
-}
-
-.contact-form h2 {
-    color: #62371f;
-}
-
-form label {
+form label{
     display: block;
     margin: 10px 0 5px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -198,18 +204,18 @@ form input, form textarea, form button {
     border-radius: 5px;
 }
 
-form button {
+form button.hover{
     background-color: #e9b732;
-    color: #000000;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #62371f;
     color: #e1e1e2;
 }
 
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #e9b732;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
 
 footer {
     background-color: #000000;
